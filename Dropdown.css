@@ -1,0 +1,123 @@
+*{padding: 0; 
+	margin: 0; 
+	box-sizing: border-box;}
+
+:root{
+	--green: rgb(0,150,0);
+}
+
+body{background-color: ;
+	/*background-image: url("../Pictures/pexels-markus-spiske-1089438.jpg");*/
+	background-repeat: no-repeat;
+	 background-attachment:;
+	 background-size: cover; /*makes the image comes out very clear on the screen*/ 
+	/*background-position: ;*/
+	
+}
+
+.menu-bar{
+	background-color: var(--green);
+	text-align: center;
+	border-bottom: black solid 5px;
+	font-family: algerian;
+}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: white;
+}
+
+.menu-bar ul li{
+	width: 120px;
+	padding:15px;
+	margin: 15px;
+}
+
+.menu-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-bar >ul >li >a:hover{
+	background-color: white;
+	color:black;
+	padding: 10px;
+}
+
+.sub-menu{
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	background-color: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+	z-index: 3;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted white
+}
+
+.menu-bar ul li:hover .sub-menu ul li.last-child{
+	border-bottom: none;
+}
+h1{margin: 0px 5px;
+	color:green;}
+
+.box{
+	width: 373px;
+	height: 373px;
+	background: url(../Pictures/pexels-irina-iriser-1408221.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	margin: auto;
+}
+
+.text{
+	width:100%;
+	height: 100px;
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+	font-size: 40px;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+}
+
+.read{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,150,0,0.35);
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	transition: 1s all;
+	opacity: 0;
+}
+
+.read:hover{
+	opacity: 1;
+}
+
+.maindiv{
+	display: flex;
+	justify-content: space-around;
+}
+
+footer{
+ width: 100%; 
+  height: 50px; 
+  text-align: center; 
+  background-color: blue; 
+  margin-top: 5px; 
+  position: relative;
+  top: 100%}
